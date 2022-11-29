@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="favicon.png">
+  </head>
+  <body>
+    <h2 id="home"></h2>
+
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <div class="topcontainer">
+  <div class="imageintro">
+    <img src="introimages.jpg" alt="" class="introphoto">
+  </div>
+  <div class="aboutwebsite">
+    <h4>Know about your books at HOME</h4>
+  </div>
+</div>
+<div class="search-container">
+  <img class="searchimage" src="search image.jpg" alt="">
+
+  <form  class="searchbox" action="/action_page.php">
+    <input type="text" placeholder="Search by title" name="search-title"  id="myInput-title" onkeyup="myFunctiontitle()" >
+
+  </form>
+  <form  class="searchbox" action="/action_page.php">
+    <input type="text" placeholder="Search by Author" name="search-author"  id="myInput-author" onkeyup="myFunctionauthor()">
+
+  </form>
+  <form  class="searchbox" action="/action_page.php">
+    <input type="text" placeholder="Search by Subject" name="search-subject"  id="myInput-subject" onkeyup="myFunctionsubject()">
+
+  </form>
+
+<form  class="searchbox" action="/action_page.php">
+  <input type="text" placeholder="Search by Publish-Date" name="search-publishdate"  id="myInput-publishdate" onkeyup="myFunctionpublishdate()">
+
+</form>
+
+
+</div>
+<h4 id="demo"> </h4>
+
+<h2 class="tableheading">Table of Books</h2>
+<table id="myTable">
+  <tr class="header">
+    <th id="titlecolumn" style="width:40%;">Title</th>
+    <th style="width:20%;">Author </th>
+    <th style="width:20%">Subject </th>
+    <th style="width:20%">Publish-Date</th>
+  </tr>
+  <tr>
+    <td>Gone Girl</td>
+    <td>Gillian Flynn</td>
+    <td>Mystery</td>
+    <td>2008</td>
+  </tr>
+  <tr>
+    <td>The silent patient</td>
+  <td>Alex Michaels</td>
+  <td>Suspense</td>
+  <td>2019</td>
+  </tr>
+  <tr>
+    <td>A time to kill</td>
+    <td>John Grisham</td>
+    <td>Mystery</td>
+    <td>1989</td>
+  </tr>
+  <tr>
+    <td>The wedding Date</td>
+    <td>Jasmine</td>
+    <td>Love</td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td>A visit from Goon squad</td>
+    <td>Jennifer egan</td>
+    <td>Corruption</td>
+    <td>2017</td>
+  </tr>
+  <tr>
+    <td>The glass hotel</td>
+    <td>John Mandel</td>
+    <td>Financial thriller</td>
+    <td>2020</td>
+  </tr>
+  <tr>
+    <td>To kill a Mocking bird</td>
+    <td>Harper Lee</td>
+    <td>Racism</td>
+    <td>2015</td>
+  </tr>
+  <tr>
+    <td>Rich dad poor dad</td>
+    <td>Robert kiyoski</td>
+    <td>Finance intelligence</td>
+    <td>1997</td>
+  </tr>
+  <tr>
+    <td>One Amazing Thing</td>
+    <td>Chitra banerjee</td>
+    <td>Survival</td>
+    <td>2009</td>
+  </tr>
+  <tr>
+    <td>Gun island</td>
+    <td>Amitav</td>
+    <td>Adventure</td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td>A Fine Balance</td>
+    <td>Rohinton</td>
+    <td>Robbery</td>
+    <td>2010</td>
+  </tr>
+  <tr>
+    <td>Girl gone viral</td>\
+    <td>Rai</td>
+    <td>Social media</td>
+    <td>2020</td>
+  </tr>
+  <tr>
+    <td>A suitable boy</td>
+    <td>Vikram</td>
+    <td>love and life</td>
+    <td>2005</td>
+  </tr>
+  <tr>
+    <td>The Farfield</td>
+    <td>Vijay</td></td>
+    <td>Socio political</td>
+    <td>2019</td>
+
+  </tr>
+  <tr>
+    <td>Da vinci code</td>
+    <td>Brown</td>
+    <td>Crime,Thriller and Adventure</td>
+    <td>1990</td>
+
+  </tr>
+  <tr>
+    <td>On Juneteenth</td>
+    <td>GordonReed</td>
+    <td>History</td>
+    <td>2021</td>
+  </tr>
+  <tr>
+    <td>The Mirror and the light</td>
+    <td>Hilary mantel</td>
+    <td>Space travel</td>
+    <td>2020</td>
+  </tr>
+  <tr>
+    <td>A passage to India</td>
+    <td>Forster</td>
+    <td>Travel</td>
+    <td>2004</td>
+  </tr>
+</table>
+<br>
+<h id="contact"></h2>
+<div class="helpdesk">
+        <h1 class="contactus">Contact-Us</h1>
+        <img class="helpprofile" src="https://cdn-icons-png.flaticon.com/512/2343/2343723.png" alt="">
+        <div class="contact">
+        <a href="tel:+9052902979"><p>9052902979</p></a>
+        <a href="mailto:polasanthoshi39@gmail.com">polasanthoshi39@gamil.com</a>
+        </div>
+      </div>
+  </div>
+<script type="text/javascript">
+  function myFunctiontitle() {
+    var input, filter, table, tr, td, i, txtValue;
+    let c=0;
+    input = document.getElementById("myInput-title");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          c++;
+          tr[i].style.display = "";
+
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+  }
+  let z=c;
+  document.getElementById("demo").innerHTML = "Found "+z+" results";
+  }
+  function myFunctionauthor() {
+    var input, filter, table, tr, td, i, txtValue;
+    let c=0;
+    input = document.getElementById("myInput-author");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[1];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          c++;
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+   let z=c;
+     document.getElementById("demo").innerHTML = "Found "+z+" results";
+  }
+
+
+
+  function myFunctionsubject() {
+    var input, filter, table, tr, td, i, txtValue;
+    let c=0;
+    input = document.getElementById("myInput-subject");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[2];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          c++;
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+    let z=c;
+      document.getElementById("demo").innerHTML = "Found "+z+" results";
+  }
+
+
+  function myFunctionpublishdate() {
+    var input, filter, table, tr, td, i, txtValue;
+    let c=0;
+    input = document.getElementById("myInput-publishdate");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[3];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          c++;
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+    let z=c;
+      document.getElementById("demo").innerHTML = "Found "+z+" results";
+  }
+
+
+</script>
+
+
+
+
+
+  </body>
+</html>
